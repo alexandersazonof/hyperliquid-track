@@ -116,7 +116,7 @@ export class HyperliquidWebSocket {
             continue;
           }
 
-          const messageText = formatUserFillMessage(fill) + `\nLabel: **${addressEntry.label}**`;
+          const messageText = formatUserFillMessage(fill) + `\nLabel: *${addressEntry.label}*`;
           await this.bot.telegram.sendMessage(config.telegramChatId, messageText, { parse_mode: 'Markdown' }).catch((err) => {
             console.error('Error sending Telegram message:', err);
           });
