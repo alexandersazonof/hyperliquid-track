@@ -1,0 +1,21 @@
+{
+  "name": "hype-track",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node --no-deprecation dist/index.js",
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "telegraf": "^4.16.3",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.8.3"
+  }
+}
